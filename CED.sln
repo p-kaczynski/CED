@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CED", "CED\CED.csproj", "{2E75CE36-B3F2-4831-9104-8903783D96A6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{968408D4-9341-4707-8CC2-0558A9AC43FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CED.Tests.461", "CED.Tests.461\CED.Tests.461.csproj", "{0E6448EB-4199-4009-9CDA-3F21E91F952A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{2E75CE36-B3F2-4831-9104-8903783D96A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E75CE36-B3F2-4831-9104-8903783D96A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E75CE36-B3F2-4831-9104-8903783D96A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E6448EB-4199-4009-9CDA-3F21E91F952A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E6448EB-4199-4009-9CDA-3F21E91F952A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E6448EB-4199-4009-9CDA-3F21E91F952A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E6448EB-4199-4009-9CDA-3F21E91F952A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0E6448EB-4199-4009-9CDA-3F21E91F952A} = {968408D4-9341-4707-8CC2-0558A9AC43FF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7DE98F84-D545-4A77-9A8A-EF98997C510D}
