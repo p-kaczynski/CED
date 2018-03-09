@@ -5,14 +5,14 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 using CED.Config;
+using CED.Logging;
 using JetBrains.Annotations;
-using NLog;
 
 namespace CED
 {
     public class EventDispatcher
     {
-        private static readonly Logger Log = LogManager.GetCurrentClassLogger();
+        private static readonly ILog Log = LogProvider.For<EventDispatcher>();
 
         [PublicAPI]
         public const string DefaultConfigSectionName = "eventConfig";
