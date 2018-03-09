@@ -20,6 +20,7 @@ namespace CED.Config
         public LocatorConfigElement Locator
         {
             get => (LocatorConfigElement) base["locator"];
+            [UsedImplicitly]
             set => base["locator"] = value;
         }
 
@@ -128,6 +129,7 @@ namespace CED.Config
         public bool FindInstance
         {
             get => (bool) this["findInstance"];
+            [UsedImplicitly]
             set => this["findInstance"] = value;
         }
     }
@@ -170,6 +172,7 @@ namespace CED.Config
         public bool FindInstance
         {
             get => (bool)this["findInstance"];
+            [UsedImplicitly]
             set => this["findInstance"] = value;
         }
 
