@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>0.1</Version>
+    <Authors>Paweł Kaczyński</Authors>
+    <Company />
+    <Description>A Configurable Event Dispatcher for .NET</Description>
+    <Copyright>Copyright 2018 by Paweł Kaczyński, released on MIT license</Copyright>
+    <RepositoryUrl>https://github.com/p-kaczynski/CED</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/p-kaczynski/CED</PackageProjectUrl>
+    <PackageTags>events, event dispatcher</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
