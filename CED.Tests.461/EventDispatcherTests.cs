@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using CED.Tests._461.Config;
 using Should;
 using Xunit;
@@ -48,6 +49,7 @@ namespace CED.Tests._461
         }
     }
 
+    [SuppressMessage("ReSharper", "EventNeverSubscribedTo.Global", Justification = "That's the point ;)")]
     internal class Producer
     {
         public event EventHandler NoDataEvent;
@@ -56,12 +58,12 @@ namespace CED.Tests._461
         public static event EventHandler StaticNoDataEvent;
         public static event EventHandler<int> StaticIntEvent;
 
-        public virtual void OnNoDataEvent()
+        public void OnNoDataEvent()
         {
             NoDataEvent?.Invoke(this, EventArgs.Empty);
         }
 
-        public virtual void OnIntEvent(int e)
+        public void OnIntEvent(int e)
         {
             IntEvent?.Invoke(this, e);
         }
@@ -77,6 +79,8 @@ namespace CED.Tests._461
         }
     }
 
+    [SuppressMessage("ReSharper", "UnusedMember.Global", Justification = "That's the point ;)")]
+    [SuppressMessage("ReSharper", "UnusedParameter.Global", Justification="Unused parameters are fine, this is just test code")]
     internal class Consumer
     {
         public bool NoDataTriggered { get; private set; }
