@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Reflection;
+using CED.Logging;
 using JetBrains.Annotations;
-using NLog;
 
 namespace CED
 {
     internal class DelegatingHook
     {
-        private static readonly Logger Log = LogManager.GetCurrentClassLogger();
+        private static readonly ILog Log = LogProvider.For<DelegatingHook>();
 
         [NotNull] private readonly EventInfo _eventInfo;
         [CanBeNull] private readonly object _producerInstance;
